@@ -1,0 +1,452 @@
+/* setting that only shows the vertical menu based on large sized windows */
+@media only screen and (min-width: 1080px){
+    .topnav {
+        display: none;
+    }
+    .hide-mobile{
+        display: block;
+    }
+}
+
+/* setting that only shows the horizontal menu based on small sized windows */
+@media only screen and (max-width: 1080px){
+    .topnav {
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    /* background-color: #baf5d1; */
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 2vh 2.5vh;
+    text-decoration: none;
+    font-size: 3vh;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 650;
+}
+
+/* Style the menu */
+.topnav a.icon {
+    background: #65f8a0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a background color on mouse-over */
+.topnav a:hover {
+    background-color: #bcfcd5;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #65f8a0;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+.button-analog {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 3vw;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #009b3b;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px #999;
+}
+
+.button-analog:hover {background-color: #3e8e41}
+
+.button-analog:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* --------------------------------POLAROID----------------------------------------- */
+
+.polaroid-title {
+    width: 100%;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    background-color: transparent;
+    color: #3c915e;
+
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+
+
+.gallery {
+    display: flex;
+    width: auto;
+    background-color: #98fcc0;
+    border-radius: 5vh;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.polaroid a {
+    background: #f3fcf6;
+    display: inline-block;
+    position: relative;
+    border-radius: 3vh;
+
+    margin: 5vw 3vw 5vw;
+    padding: 15px 15px 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3); 
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    -webkit-transition: all .10s linear;
+    -moz-transition: all .10s linear;
+    transition: all .10s linear;
+
+    z-index: 0;
+}
+
+.polaroid a:after {
+    color: #333;
+    font-size: 4vw;
+    font-weight: 1000;
+    content: attr(title);
+    position: relative;
+    top: 2vw;
+}
+
+.polaroid img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 17vw;
+    width: auto;
+}
+
+.polaroid a:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    transform: scale(1.02);
+    z-index: 10;
+    background-color: #f3fcf6;
+}
+
+
+/* --------------------------------- FONT SETTINGS  --------------------------- */
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* --------------------------------- GENERAL SETTINGS  --------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    background-color: #ebfaf1;
+    overflow-x:hidden
+}
+
+#background-for-text {
+    position:absolute;
+    width: 87vw;
+    left: 5vw;
+    background: #ebfaf1;
+    height: 98vh;
+    top: 2vw;
+    z-index: -1;
+}
+
+
+/* ----------------------------------- SPECIFIC PARTS -------------------------------------- */
+
+#gradient-bar {
+    width: 102vw;
+    margin-top: 5vw;
+    margin-left: -2vw;
+    height: 3vh;
+    background-image: linear-gradient(to right, #65f8a0, #65f8a0, #d3f8e2, #ebfaf1);
+}
+
+#page-title {
+    text-align: center;
+    display: block;
+    margin-top: 3vw;
+    padding: 2vw 0vw;
+    font-size: 4.5vh;
+    color: #499cb6;
+    font-weight: 700;
+}
+
+#pause-block {
+    display: block;
+    background-color: #d3f8e2;
+    height: 1.5vh;
+    margin-left: -2vw;
+    margin-top: 1vh;
+    width: 100vw;
+}
+
+#pause-block-flex {
+    display: block;
+    background-color: #d3f8e2;
+    height: 2vw;
+    margin-top: 5vw;
+    margin-left: -2vw;
+    width: 100vw;
+}
+
+#continue-block {
+    display:block;
+    background-color: #ebfaf1;
+    height: 4vw;
+    margin-left: -20vw;
+    width: 100vw;
+}
+ 
+/*------------------------------------------------------------- TOP OF PAGE ------------------------------- */
+
+/* picture with following blocks: */
+.container {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height:auto;
+    text-align: center;
+    margin-left: -2vw;
+}
+
+/* title */
+.center-left {
+    position: relative;
+    left: -30vw;
+    top: -64vw;
+    font-size: 9vw;
+    color: #3c915e;
+    font-weight: 900;
+}
+
+/* vertical blocks */
+.intro-polygon {
+    position: absolute;
+    width: 100vw;
+    height: 90vw;
+    top: 0;
+    left: 22.95vw;
+    background-color: #65f8a0;
+    -webkit-clip-path: polygon(0 105vw, 20vw 0, 0 0);
+    clip-path: polygon(0 105vw, 20vw 0, 0 0);
+}
+
+.intro-rectangle {
+    position: absolute;
+    background-color: #65f8a0;
+    width: 26vw;
+    left: -2vw;
+    height: 90vw;
+    top:0;
+}
+/* --------- */
+
+#intro {
+    text-align: left;
+    margin-left: 28vw;
+    margin-top: -18vw;
+    display: block;
+    font-size: 4vw;
+    font-weight: 400;
+    color:#245538;
+    z-index: 1;
+}
+
+/* ------------------------------- TITLE OBJECT --------------------- */
+
+.category-polygon {
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    margin-left: -2vw;
+    /* left: 22.95vw; */
+    margin-bottom: -20vw;
+    background-color: #98fcc0;
+    -webkit-clip-path: polygon(0 20vw, 100vw 0, 0 0);
+    clip-path: polygon(0 20vw, 100vw 0, 0 0);
+    z-index: -1;
+}
+
+.item-block-title {
+    width: 100vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #3c915e;
+
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+.item-block{
+    width: 100vw;
+    height: 45vW;
+}
+
+.item-row-top a{
+    position: relative;
+    border-radius: 1.75vh;
+    
+    -webkit-box-shadow: 0 3px 5px #277445; 
+    -moz-box-shadow: 0 3px 5px #277445;
+    box-shadow: 0 3px 5px #277445;
+    
+    color: #245538;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-decoration: none;
+    padding: 1vw 0 0;
+
+    margin-bottom: 2vh;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5cbd83;
+    display: block;
+
+    width: 70vw;
+    height: 7vw;
+}
+.item-row-top a:hover{
+    background-color: #7afcae;
+}
+
+
+.item-row a{
+    position: relative;
+    border-radius: 1.5vh;
+    
+    -webkit-box-shadow: 0 3px 5px #277445; 
+    -moz-box-shadow: 0 3px 5px #277445;
+    box-shadow: 0 3px 5px #277445;
+    
+    color: #245538;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-decoration: none;
+    padding: 1vw 0 0;
+
+    margin-bottom: 2vh;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7afcae;
+    display: block;
+
+    width: 70vw;
+    height: 7vw;
+}
+
+.item-row a:hover{
+    background-color: #bcfcd5;
+}
+
+/* ----------------------------------- FINISHING --------- */
+
+#bottom-text {
+    display: block;
+    background-color: #d3f8e2;
+    width:100vw;
+    height: 35vw;
+    margin-left: -2vw;
+
+    /* font-size: 2vw; */
+    text-align: center;
+}
+
+#bottom-text h1{
+    color: #3c915e;
+    padding-top: 2vw;
+}
+
+#bottom-text a{
+    text-decoration: none;
+    color: #3c915e;
+    margin-right: 2vw;
+}
+
+
+/* ----------------------------------- COLOR PALLETE --------- */
+#green {
+    color: #d3f8e2; /* #65f8a0 */
+}
+#turqouise {
+    color: #e4c1f9;
+}
+#red {
+    color: #f694c1;
+}
+#yellow {
+    color: #ede7b1;
+}
+#blue {
+    color: #a9def9;
+}
+
+
+
+
