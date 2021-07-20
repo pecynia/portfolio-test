@@ -427,6 +427,13 @@ body {
     text-decoration: none;
     color: #3c915e;
     margin-right: 2vw;
+    -webkit-transition: all .10s linear;
+    -moz-transition: all .10s linear;
+    transition: all .10s linear;
+}
+
+#bottom-text a:hover{
+    color: #5be090;
 }
 
 
