@@ -493,11 +493,15 @@ body {
 
     text-align: center;
     font-weight: 900;
-    font-size: 6vw;
+    font-size: 3vh;
     color: #347a50;
 
     background-color: #baf5d1;
     border-radius: 0 0 6rem 6rem;
+}
+.bot-title {
+    text-align: center;
+    padding-top: 1vh;
 }
 
 .bot-technical-container{
@@ -524,7 +528,7 @@ body {
 
 .bot-description-container {
     display:block;
-    width: 75vw;
+    width: 85vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -541,7 +545,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.5vh;
-    width: 65vw;
+    width: 75vw;
     font-size: 2vh;
 }
 
