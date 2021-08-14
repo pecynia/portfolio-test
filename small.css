@@ -23,7 +23,6 @@
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    /* background-color: #baf5d1; */
     position: relative;
 }
 
@@ -35,6 +34,7 @@
 /* Style navigation menu links */
 .topnav a {
     color: black;
+    margin-top: 0.5vw;
     padding: 2vh 2.5vh;
     text-decoration: none;
     font-size: 3vh;
@@ -50,17 +50,20 @@
     position: absolute;
     right: 0;
     top: 0;
+    border-radius: 0rem;
 }
 
 /* Add a background color on mouse-over */
 .topnav a:hover {
     background-color: #bcfcd5;
     color: black;
+    border-radius: 0rem;
 }
 
 /* Style the active link (or home/logo) */
 .active {
     background-color: #65f8a0;
+    border-radius: 0rem;
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -95,6 +98,7 @@
     width: 100%;
 
     text-align: center;
+    margin-top: -3vw;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
@@ -340,9 +344,41 @@ body {
     font-weight: 900;
 }
 
+.item-block-description {
+    width: 80vw;
+    margin-top: -4vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: block;
+
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-align: left;
+    color: #11381e;
+}
+
+.item-block-line {
+    display: block;
+    background-color: #d3f8e2;
+    height: 1.5vw;
+
+    margin-top: -1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 3vw;
+    width: 80vw;
+}
+
+/* ------------------------------- LIST OBJECTS --------------------- */
+
 .item-block{
     width: 100vw;
     height: 45vW;
+}
+
+.item-block-large{
+    width: 100vw;
+    height: auto;
 }
 
 .item-row-top a{
@@ -374,7 +410,6 @@ body {
     background-color: #7afcae;
 }
 
-
 .item-row a{
     position: relative;
     border-radius: 1.5vh;
@@ -404,6 +439,118 @@ body {
 .item-row a:hover{
     background-color: #bcfcd5;
 }
+
+.item-row-bot a{
+    position: relative;
+    border-radius: 1.5vh;
+    
+    -webkit-box-shadow: 0 3px 3px #5bb47c; 
+    -moz-box-shadow: 0 3px 3px #5bb47c;
+    box-shadow: 0 3px 3px #5bb47c;
+    
+    color: #245538;
+    text-align: left;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-decoration: none;
+    padding: 1vw 0 0;
+
+    margin-bottom: 2vw;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #aef5ca;
+    display: block;
+
+    width: 70vw;
+    height: 7vw;
+}
+
+.item-row-bot-text{
+    padding: 0 0 0 2vw;
+}
+
+.item-row-bot-category{
+    position: relative;
+    text-align: right;
+    margin-top: -5vw;
+    margin-right: 2vw;
+    color: #509e6f;
+}
+
+.item-row-bot a:hover{
+    background-color: #bcfcd5;
+}
+
+/* ----------------------------------- CONTENT ------------*/
+
+.bot-title-container {
+    display: block;
+    width: 85vw;
+    height: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-weight: 900;
+    font-size: 4vh;
+    color: #347a50;
+
+    background-color: #baf5d1;
+    border-radius: 0 0 6rem 6rem;
+}
+
+.bot-technical-container{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -3vh;
+
+    width: 65vw;
+    height: 6vh;
+
+    background-color: #baf5d1;
+    border-radius: 6rem 6rem 0 0;
+}
+
+.bot-technical-container-text{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3vh;
+    padding-top: 0.3vh;
+    color: #2d6945;
+}
+
+
+.bot-description-container {
+    display:block;
+    width: 75vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    
+    background-color: #d3f8e2;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2rem 2rem -1.5rem, rgba(0, 0, 0, 0.3) 0 2rem 0rem -2rem;
+}
+
+.bot-description {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5vh;
+    width: 65vw;
+    font-size: 2vh;
+}
+
+.bot-description-header{
+    font-weight: 900;
+    font-style: oblique;
+}
+
+
 
 /* ----------------------------------- FINISHING --------- */
 
@@ -437,6 +584,8 @@ body {
 }
 
 
+
+
 /* ----------------------------------- COLOR PALLETE --------- */
 #green {
     color: #d3f8e2; /* #65f8a0 */
@@ -456,4 +605,81 @@ body {
 
 
 
+
+
+/* ----------------------------TOOL TIP -------------------- */
+
+/*== start of code for tooltips ==*/
+.tool {
+    cursor: help;
+    position: relative;
+    border-bottom: 1px dashed grey;
+}
+
+
+/*== common styles for both parts of tool tip ==*/
+.tool::before,
+.tool::after {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.tool:hover::before,
+.tool:focus::before,
+.tool:hover::after,
+.tool:focus::after {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    z-index: 100; 
+}
+
+
+/*== pointer tip ==*/
+.tool::before {
+    border-style: solid;
+    border-width: 1em .75em 0.2em 0.75em;
+    border-color: #385341 transparent transparent transparent;
+    bottom: 100%;
+    content: "";
+    margin-left: -0.5em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
+    transform:  scale(0.6) translateY(-90%);
+} 
+
+.tool:hover::before,
+.tool:focus::before {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+}
+
+
+/*== speech bubble ==*/
+.tool::after {
+    background: #385341;
+    border-radius: 1rem;
+    bottom: 180%;
+    color: #d3f8e2;
+    content: attr(data-tip);
+    margin-left: -8.75em;
+    padding: 1em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+    transform:  scale(.6) translateY(50%);  
+    width: 17.5em;
+}
+
+.tool:hover::after,
+.tool:focus::after  {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+}
+
+@media (max-width: 760px) {
+  .tool::after { 
+        font-size: .75em;
+        margin-left: -5em;
+        width: 10em; 
+  }
+}
 

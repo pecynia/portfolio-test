@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Machinist</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" media="screen and (min-width: 1080px)" type= "text/css" href="../../CSS/wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1080px)" type= "text/css" href="../../CSS/small.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1080px)" type= "text/css" href="../../CSS/small.css">
+
+    <!-- menu stripe link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- script for small menu-->
+    <script src = "../../Javascript/mobile-menu.js"></script>
+    <script src = "../../Javascript/rest-api-get-test.js"></script>
+    <script src = "../../Javascript/buy-and-hold.js"></script>
+</head>
+
+<body>
+
+<!-- DESKTOP MENU -->
+<nav class="hide-mobile">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Bots</a>
+        <div class="dropdown-content">
+            <a href="../../HTML/bots/trend-trading.html">Trend Following</a>
+            <a href="../../HTML/bots/swing-trading.html">Swing Bots</a>
+            <a href="../../HTML/bots/scalp-trading.html">Scalper Bots</a>
+        </div></li>
+        <li><a href="/HTML/about-us.html">About Us</a></li>
+        <li><a href="/HTML/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="topnav">
+    <a href="index.html">The Machinist</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="../../HTML/index.html">Home</a>
+        <a href="../../HTML/bots-start.html" class="active">Bots</a>
+        <a href="../../HTML/about-us.html">About Us</a>
+        <a href="../../HTML/contact.html">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- ITEMS -->
+<div id="background-for-text"></div>
+<div id="pause-block"></div>
+<!-- <div id="continue-block"></div> -->
+
+<!-- content --------------------------------------------------------------------->
+
+<!-- <p>Buy and Hold:</p> -->
+<script>window.onload = buy_and_hold('intercity');</script>
+
+<!-------------------------------------------------------------------------------->
+
+<!-- title -->
+<div class="bot-title-container">InterCity.LTI</div>
+
+<div class="bot-description-container">
+    <div class="bot-description">
+        <div class="bot-description-header">
+            Mama's description
+        </div>
+        This bot is a crypto bot who likes to spend its time around the busy central station of Bitcoin (BTC), it is part of the Long Term Investing (LTI) bot series. 
+        <br><br>This bot makes use of value based probabilistic models to outperform the market and reinvest, 
+        creating the effect of compound interest. It is able to catch big market 
+        moves while also knowing when to get out to keep losses at a minimum.
+    </div>
+</div>
+<div class="bot-technical-container">
+    <div class="bot-technical-container-text">
+        Technicals
+    </div>
+</div>
+<div class="bot-description-container">
+    <div class="bot-description">
+        <div class="bot-description-header">
+            Technical description
+        </div>
+        The InterCity bot tries to catch big trends by using an enhanced version of the 
+        'Super Trend' indicator
+        that uses relevant support and resistance zones. 
+        <br><br>
+        <div class="bot-description-header">
+            <span class="tool" 
+            data-tip="Trading history in simulated environment" tabindex="1">
+            Backtest results</span>
+        </div>
+        January 2019 to april 2021 return: 665%  
+        <br><br>
+        <div class="bot-description-header">
+            <span class="tool" 
+            data-tip="Assets this bot takes positions in" tabindex="1">
+            Asset pool</span>
+        </div>
+        Bitcoin (BTC)
+        <br><br>
+        <div class="bot-description-header">
+            <span class="tool" 
+            data-tip="Assets this bot is currently holding" tabindex="1">
+            Currently holding</span>
+        </div>
+        <!-- add div id here -->
+        <br><br>
+        <div class="bot-description-header">
+            <span class="tool" 
+            data-tip="The average return over all assets in asset pool 
+            since the bot's publication" tabindex="1">
+            Buy and Hold reference</span>
+        </div>
+        <div id="bot_stats"></div>
+    </div>
+</div>
+
+<!---------------------------------------------------------->
+
+<div id="pause-block-flex"></div>
+<div id="continue-block"></div>
+<div id="bottom-text">
+    <h1>The Machinist</h1>
+    <a href="/HTML/index.html">Home</a>
+    <a href="/HTML/bots-start.html">Bots</a>
+    <a href="/HTML/bots/trend-trading.html">Trending</a>
+    <a href="/HTML/bots/swing-trading.html">Swinging</a>
+    <a href="/HTML/bots/scalp-trading.html">Scalping</a>
+    <br>
+    <a href="/HTML/about-us.html">About us</a>
+    <a href="/HTML/contact.html">Contact</a>
+
+
+
+    <br><br>Copywright © 2021 <a href="www.themachinist.tech">The Machinist</a>- All Rights Reserved
+</div>
+
+</body>
+</html>
