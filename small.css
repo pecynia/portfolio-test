@@ -504,10 +504,10 @@ body {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -3vh;
+    margin-bottom: -7vh;
 
     width: 65vw;
-    height: 6vh;
+    height: 10vh;
 
     background-color: #baf5d1;
     border-radius: 6rem 6rem 0 0;
@@ -517,7 +517,7 @@ body {
     text-align: center;
     font-weight: 900;
     font-size: 3vh;
-    padding-top: 0.3vh;
+    padding-top: 0.2rem;
     color: #2d6945;
 }
 
@@ -558,10 +558,11 @@ body {
     display: block;
     background-color: #d3f8e2;
     width:100vw;
-    height: 35vw;
-    margin-left: -2vw;
+    height: 25vh;
+    margin-bottom: -2vh;
+    margin-left: -2vh;
 
-    font-size: 3vw;
+    font-size: 2vh;
     text-align: center;
 }
 

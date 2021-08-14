@@ -60,7 +60,9 @@
 <!-- content --------------------------------------------------------------------->
 
 <!-- <p>Buy and Hold:</p> -->
-<script>window.onload = buy_and_hold('intercity');</script>
+<script>
+window.onload = buy_and_hold('intercity'), fetchMyDocument();
+</script>
 
 <!-------------------------------------------------------------------------------->
 
@@ -111,7 +113,7 @@
             data-tip="Assets this bot is currently holding" tabindex="1">
             Currently holding</span>
         </div>
-        <!-- add div id here -->
+        <div id="json"></div>
         <br><br>
         <div class="bot-description-header">
             <span class="tool" 
@@ -131,9 +133,9 @@
     <h1>The Machinist</h1>
     <a href="index.html">Home</a>
     <a href="bots-start.html">Bots</a>
-    <a href="trend-trading.html">Trending</a>
-    <a href="swing-trading.html">Swinging</a>
-    <a href="scalp-trading.html">Scalping</a>
+    <a href="bots/trend-trading.html">Trending</a>
+    <a href="bots/swing-trading.html">Swinging</a>
+    <a href="bots/scalp-trading.html">Scalping</a>
     <br>
     <a href="about-us.html">About us</a>
     <a href="contact.html">Contact</a>
