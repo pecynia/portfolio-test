@@ -2,7 +2,6 @@
 var fetch = require("node-fetch");
 
 const url_link = 'https://europe-west1-cobalt-balancer-322313.cloudfunctions.net/getBotAssets'
-// const url_link = 'https://signal.revenyou.io/production/api/signal/v2/getBotAssetsPct?signalProvider=Incr3mental%20Trailway&signalProviderKey=Y9TEOLC4CJWSPKLG&exchange=binance&baseAsset=USDT'
 
 async function fetchMyDocument(){
   const options = {
